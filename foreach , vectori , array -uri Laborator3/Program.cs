@@ -34,7 +34,10 @@ namespace laborator3
 
     class Program
     {
-        static void Main(string[] args)
+       
+
+           
+     static void Main(string[] args)
         {
             int[] vectorIntregi = new int[100]; // instatiaza mai precis avem liber de 100 de elemente 
 
@@ -42,34 +45,17 @@ namespace laborator3
             int counter = 0; // stocam elementul pe care il dorim sa l avem in vector 
 
 
-            int number = int.Parse(Console.ReadLine());  // numere introduse in vector 
+            int number;
 
 
             while ((number = int.Parse(Console.ReadLine())) > 0) // am tastat un numar ce respecta conditia si intra in bucla
             {
 
-
                 vectorIntregi[counter] = number;             // vectorul intregi va lua valoarea counterului  
-
                 counter++; // incrementam cu o pozitie 
 
-
-
             }
 
-            for (int i = 0; i < counter; i++)
-            {
-
-
-
-                Console.WriteLine(vectorIntregi[i]);
-
-
-
-
-            }
-
-           
         }
 
 
